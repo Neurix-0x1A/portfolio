@@ -7,135 +7,138 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
+      font-family: Arial, sans-serif;
       background-color: #111111;
       color: #e5e5e5;
-      font-family: Arial, sans-serif;
-    }
-    h2 {
-      color: #d1d1d1;
-    }
-    .custom-hr {
-      border: 0;
-      height: 1px;
-      background: #444;
-      margin: 2rem 0;
-    }
-    .text-muted {
-      color: #7c7c7c;
     }
     a {
-      color: #7c7c7c;
+      color: #57c7ff;
       text-decoration: none;
     }
     a:hover {
-      color: #e5e5e5;
       text-decoration: underline;
     }
   </style>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-  <div class="max-w-3xl px-8">
-    <!-- Header Section -->
-    <header class="text-center mb-8">
-      <h1 class="text-2xl font-bold">Anil Kumble</h1>
-      <p class="text-sm text-gray-400 mt-1">Software Engineer</p>
-    </header>
-
-    <hr class="custom-hr">
-
-    <!-- Contact Information -->
-    <section class="mb-8">
-      <h2 class="text-lg font-semibold mb-4">Contact Information</h2>
-      <div class="flex flex-wrap gap-4">
-        <a href="mailto:anilkumbl3@gmail.com" class="text-sm">Email</a>
-        <span class="text-sm text-muted">|</span>
-        </span>
-        <a href="https://github.com/Neurix-0x1A" class="text-sm" target="_blank">GitHub</a>
-        <span class="text-sm text-muted">|</span>
-        <a href="https://www.linkedin.com/in/anil-kumble30" class="text-sm" target="_blank">LinkedIn</a>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-black text-gray-200 py-4 fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Anil Kumble</h1>
+      <div class="flex gap-6">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#experience" class="hover:text-white">Experience</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <hr class="custom-hr">   
+  <!-- Hero Section -->
+  <section class="bg-black text-center py-32 mt-16">
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm Anil Kumble</h1>
+    <p class="text-lg text-gray-400">Software Engineer | Passionate about Web Development and Machine Learning</p>
+    <p class="mt-6">
+      <a href="mailto:anilkumbl3@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-6 rounded">Contact Me</a>
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        I'm a software engineer with experience in developing scalable web applications and mobile apps. I specialize in React, Node.js, and Python, and I enjoy building solutions that are both efficient and user-friendly.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <!-- Education -->
-    <section class="mb-8">
-      <h2 class="text-lg font-semibold mb-4">Education</h2>
-      <p class="text-sm leading-relaxed">B.Tech in Information Technology</p>
-      <p class="text-sm text-muted">KCG College of Technology, Chennai, Tamil Nadu (2020 - 2024)</p>
-      <p class="text-sm text-muted">CGPA: 8.2</p>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-6 bg-black">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-10">Professional Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Experience Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Software Engineer Intern - Coinskite</h3>
+          <p class="text-sm text-gray-400 mb-2">Sep 2023 - Dec 2023</p>
+          <ul class="list-disc pl-5 text-gray-300 text-sm">
+            <li>Developed front-end interfaces for Android and iOS apps using JavaScript.</li>
+            <li>Managed web application development using React Native and Redux.</li>
+          </ul>
+        </div>
 
-    <hr class="custom-hr">
+        <!-- Experience Card 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Software Trainee Intern – Spritle Software</h3>
+          <p class="text-sm text-gray-400 mb-2">Jul 2024 - Aug 2024</p>
+          <ul class="list-disc pl-5 text-gray-300 text-sm">
+            <li>Implemented responsive UI components to enhance user experience.</li>
+            <li>Optimized page load speed by minifying JavaScript and reducing API calls.</li>
+          </ul>
+        </div>
 
-    <!-- Professional Experience -->
-    <section class="mb-8">
-      <h2 class="text-lg font-semibold mb-4">Professional Experience</h2>
-
-      <div class="mb-6">
-        <h3 class="font-semibold">Software Engineer Intern - Coinskite</h3>
-        <p class="text-sm text-muted">Sep 2023 - Dec 2023</p>
-        <ul class="list-disc pl-5 text-sm text-muted">
-          <li>Developed and deployed front-end interfaces for Android and iOS apps using JavaScript.</li>
-          <li>Managed end-to-end development of web applications.</li>
-          <li>Utilized React Native CLI, GitHub, and Redux (Basics).</li>
-        </ul>
+        <!-- Experience Card 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Software Trainee Intern – Tring Apps</h3>
+          <p class="text-sm text-gray-400 mb-2">Sep 2024 - Nov 2024</p>
+          <ul class="list-disc pl-5 text-gray-300 text-sm">
+            <li>Developed React.js web applications integrated with RESTful APIs.</li>
+            <li>Created reusable components and improved development efficiency.</li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mb-6">
-        <h3 class="font-semibold">Software Trainee Intern – Spritle Software</h3>
-        <p class="text-sm text-muted">Jul 2024 - Aug 2024</p>
-        <ul class="list-disc pl-5 text-sm text-muted">
-          <li>Designed and implemented responsive UI components to enhance user experience.</li>
-          <li>Optimized page load speed by minifying JavaScript and reducing redundant API calls.</li>
-          <li>Ensured cross-browser compatibility and usability.</li>
-        </ul>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Spam-Shield – Spam Detector for Email and SMS</h3>
+          <p class="text-sm text-gray-400"><a href="https://github.com/Neurix-0x1A/Spam-shield" target="_blank">View Project</a></p>
+          <p class="text-gray-300 text-sm">
+            Built a real-time spam filtering system using Python and machine learning algorithms.
+          </p>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">LLM Prompt Enhancer</h3>
+          <p class="text-sm text-gray-400"><a href="https://github.com/Neurix-0x1A/llm-prompt-enhancer" target="_blank">View Project</a></p>
+          <p class="text-gray-300 text-sm">
+            Developed a web application to help users enhance prompts for Large Language Models (LLMs).
+          </p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div>
-        <h3 class="font-semibold">Software Trainee Intern – Tring Apps</h3>
-        <p class="text-sm text-muted">Sep 2024 - Nov 2024</p>
-        <ul class="list-disc pl-5 text-sm text-muted">
-          <li>Developed and maintained React.js web applications integrated with RESTful APIs.</li>
-          <li>Created reusable React components to improve development efficiency.</li>
-          <li>Conducted rigorous testing and resolved bugs to enhance performance.</li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="custom-hr">
-
-    <!-- Projects -->
-    <section class="mb-8">
-      <h2 class="text-lg font-semibold mb-4">Projects</h2>
-      <div class="mb-4">
-        <h3 class="font-semibold">Spam-Shield – Spam Detector for Email and SMS</h3>
-        <p class="text-sm text-muted"><a href="https://github.com/Neurix-0x1A/Spam-shield" target="_blank">View Project</a></p>
-        <p class="text-sm text-muted">Built a real-time spam filtering system using Python and machine learning algorithms.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold">LLM Prompt Enhancer</h3>
-        <p class="text-sm text-muted"><a href="https://github.com/Neurix-0x1A/llm-prompt-enhancer" target="_blank">View Project</a></p>
-        <p class="text-sm text-muted">Developed a web application to help users enhance prompts for Large Language Models (LLMs).</p>
-      </div>
-    </section>
-
-    <hr class="custom-hr">
-
-    <!-- Technical Skills -->
-    <section class="mb-8">
-      <h2 class="text-lg font-semibold mb-4">Technical Skills</h2>
-      <ul class="list-disc pl-5 text-sm text-muted">
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 bg-black">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Technical Skills</h2>
+      <ul class="list-disc pl-6 text-gray-300 text-sm">
         <li>Programming Languages: HTML5, CSS3, JavaScript (ES6+), Python, SQL</li>
         <li>Frameworks & Libraries: React.js, Express.js, Node.js</li>
         <li>Databases: MongoDB, MySQL, Firebase</li>
         <li>Development Tools: Git, GitHub, Visual Studio Code</li>
-        <li>Soft Skills: Strong collaboration, problem-solving, attention to detail</li>
+        <li>Soft Skills: Collaboration, problem-solving, attention to detail</li>
       </ul>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+    <p class="text-lg text-gray-300">Feel free to reach out via email or connect on LinkedIn.</p>
+    <p class="mt-6">
+      <a href="mailto:anilkumbl3@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-6 rounded">Email Me</a>
+    </p>
+  </section>
 </body>
 </html>
-
